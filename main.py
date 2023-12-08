@@ -2,7 +2,18 @@ from datetime import date, datetime
 
 
 def get_birthdays_per_week(users):
+    current_date = datetime.now()
+    next_week_interval = datetime.timedelta(weeks=1)
+    for user in users.iter():
+        user_bday = user["birthday"]
+
+        if user["birthday"] in next_week_interval:
+            pass
+
+
     # Реалізуйте тут домашнє завдання
+
+
     return users
 
 
